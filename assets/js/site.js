@@ -310,7 +310,7 @@ function chrome(){
   document.body.insertAdjacentHTML('beforeend',`
   <footer><div class="wrap">
     <div class="top">
-      <div><a href="index.html" data-nav="home" class="flogo"><img src="assets/logo/japanscape-logo-white.svg" alt="Japanscape — Your Private Escape to Japan" width="260"></a><p style="margin-top:18px" data-i="footSince"></p></div>
+      <div><a href="index.html" data-nav="home" class="flogo"><img src="assets/logo/japanscape-logo-white.svg" alt="Japanscape — Your Private Escape to Japan" width="260" height="137"></a><p style="margin-top:18px" data-i="footSince"></p></div>
       <div><p class="label fh" data-i="footNav"></p><ul>${PAGES.map(([k,h])=>`<li><a href="${h}" data-nav="${k}" data-i="nav_${k}"></a></li>`).join('')}</ul></div>
       <div><p class="label fh" data-i="footContact"></p><ul><li><a class="wa" href="#" target="_blank" rel="noopener">WhatsApp +62 821-2356-5441</a></li><li><a href="https://instagram.com/japanscape.travel" target="_blank" rel="noopener">Instagram @japanscape.travel</a></li><li><a href="mailto:zefanyadriel@gmail.com">zefanyadriel@gmail.com</a></li></ul></div>
     </div>
