@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="assets/logo/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="assets/fonts/cormorant-garamond-latin-300-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/cormorant-garamond-latin-300-italic.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/jost-latin-300-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/jost-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/cormorant-garamond-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/css/site.css">
+<meta property="og:site_name" content="Japanscape">
+<link rel="canonical" href="https://japanscape.id/seasons.html">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta name="theme-color" content="#1C1614">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://japanscape.id/seasons.html">
+<meta property="og:title" content="Seasons — Japanscape">
+<meta property="og:description" content="Panduan musim Japanscape: kapan waktu terbaik ke Jepang — sakura, musim panas, momiji, dan salju.">
+<meta property="og:image" content="https://japanscape.id/assets/img/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<title>Seasons — Japanscape</title>
+<meta name="description" content="Panduan musim Japanscape: kapan waktu terbaik ke Jepang — sakura, musim panas, momiji, dan salju.">
+</head>
+<body data-page="seasons">
+
+<!-- Four-stage season viewer: one full-screen stage per season, switched by the tabs / arrows / swipe / keyboard. -->
+<main class="stage" id="stage" aria-roledescription="carousel" aria-label="Seasons">
+  <article class="scene" id="spring" data-acc="#F3C9D4" aria-roledescription="slide">
+    <img width="1800" height="1193" src="assets/img/sakura.webp" srcset="assets/img/sakura-800.webp 800w, assets/img/sakura.webp 1800w" sizes="100vw" alt="Cherry blossoms against a clear sky">
+    <div class="scene-in">
+      <div class="count label">01 / 04</div>
+      <div class="months" data-i="spMonths"></div>
+      <h1 data-i="spTitle"></h1>
+      <p class="sbody" data-i="spBody"></p>
+      <p class="stip" data-i="spTips"></p>
+    </div>
+  </article>
+  <article class="scene" id="summer" data-acc="#A9C99A" aria-roledescription="slide">
+    <img width="1600" height="1067" data-src="assets/img/garden.webp" srcset="assets/img/garden-800.webp 800w, assets/img/garden.webp 1600w" sizes="100vw" alt="Japanese garden in summer green">
+    <div class="scene-in">
+      <div class="count label">02 / 04</div>
+      <div class="months" data-i="suMonths"></div>
+      <h1 data-i="suTitle"></h1>
+      <p class="sbody" data-i="suBody"></p>
+      <p class="stip" data-i="suTips"></p>
+    </div>
+  </article>
+  <article class="scene" id="autumn" data-acc="#E39A6F" aria-roledescription="slide">
+    <img width="1600" height="1067" data-src="assets/img/autumn-wide.webp" srcset="assets/img/autumn-wide-800.webp 800w, assets/img/autumn-wide.webp 1600w" sizes="100vw" alt="Zefanya Adriel walking through a Tokyo park in autumn">
+    <div class="scene-in">
+      <div class="count label">03 / 04 <span class="pick" data-i="auPick"></span></div>
+      <div class="months" data-i="auMonths"></div>
+      <h1 data-i="auTitle"></h1>
+      <p class="sbody" data-i="auBody"></p>
+      <p class="squote" data-i="auQuote"></p>
+      <p class="stip" data-i="auTips"></p>
+    </div>
+  </article>
+  <article class="scene" id="winter" data-acc="#C9DAEC" aria-roledescription="slide">
+    <img width="1800" height="1200" data-src="assets/img/snow-station.webp" srcset="assets/img/snow-station-800.webp 800w, assets/img/snow-station.webp 1800w" sizes="100vw" alt="Snowy train platform near Mount Fuji">
+    <div class="scene-in">
+      <div class="count label">04 / 04</div>
+      <div class="months" data-i="wiMonths"></div>
+      <h1 data-i="wiTitle"></h1>
+      <p class="sbody" data-i="wiBody"></p>
+      <p class="stip" data-i="wiTips"></p>
+    </div>
+  </article>
+
+  <div class="stage-ui">
+    <div class="tabs" role="tablist">
+      <button role="tab" data-go="spring"><span class="tn">01</span><span data-i="tb1"></span></button>
+      <button role="tab" data-go="summer"><span class="tn">02</span><span data-i="tb2"></span></button>
+      <button role="tab" data-go="autumn"><span class="tn">03</span><span data-i="tb3"></span></button>
+      <button role="tab" data-go="winter"><span class="tn">04</span><span data-i="tb4"></span></button>
+    </div>
+    <div class="year" data-list="months" data-kind="months"></div>
+    <div class="arrows">
+      <button class="prev" aria-label="Previous season">←</button>
+      <button class="next" aria-label="Next season">→</button>
+    </div>
+  </div>
+</main>
+
+<section class="dark" style="padding:clamp(56px,7vw,96px) 0">
+  <div class="wrap" style="display:flex;justify-content:space-between;gap:28px;flex-wrap:wrap;align-items:end">
+    <div><div class="label reveal" data-i="calEyebrow" style="color:var(--blush)"></div><h2 class="serif reveal" data-i="calTitle" style="margin-top:16px"></h2></div>
+    <div style="max-width:420px"><p class="soft reveal" data-i="calSub"></p><p class="fine reveal" data-i="calFine"></p></div>
+  </div>
+</section>
+
+<section class="cta">
+  <img width="1600" height="1063" src="assets/img/lanterns.webp" srcset="assets/img/lanterns-800.webp 800w, assets/img/lanterns.webp 1600w" sizes="100vw" alt="">
+  <div class="wrap">
+    <div class="label reveal" data-i="ctaEyebrow"></div>
+    <h2 class="serif reveal" data-i="ctaTitle"></h2>
+    <p class="reveal" data-i="ctaSub"></p>
+    <div class="ctas reveal">
+      <a href="#" class="btn light wa" data-i="ctaWa"></a>
+      <a href="contact.html" data-nav="contact" class="btn ghost" data-i="ctaForm"></a>
+    </div>
+  </div>
+</section>
+
+<script src="assets/js/site.js"></script>
+</body>
+</html>

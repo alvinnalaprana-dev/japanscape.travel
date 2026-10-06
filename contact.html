@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="assets/logo/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="assets/fonts/cormorant-garamond-latin-300-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/cormorant-garamond-latin-300-italic.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/jost-latin-300-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/jost-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/cormorant-garamond-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/css/site.css">
+<meta property="og:site_name" content="Japanscape">
+<link rel="canonical" href="https://japanscape.id/contact.html">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta name="theme-color" content="#1C1614">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://japanscape.id/contact.html">
+<meta property="og:title" content="Contact — Japanscape">
+<meta property="og:description" content="Rancang perjalanan privat Anda ke Jepang bersama Japanscape. Hubungi kami via WhatsApp +62 821-2356-5441.">
+<meta property="og:image" content="https://japanscape.id/assets/img/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<title>Contact — Japanscape</title>
+<meta name="description" content="Rancang perjalanan privat Anda ke Jepang bersama Japanscape. Hubungi kami via WhatsApp +62 821-2356-5441.">
+</head>
+<body data-page="contact">
+
+<header class="page-head" style="height:60svh">
+  <img width="1800" height="1011" src="assets/img/castle-sakura.webp" srcset="assets/img/castle-sakura-800.webp 800w, assets/img/castle-sakura.webp 1800w" sizes="100vw" alt="Japanese castle framed by cherry blossoms">
+  <div class="ph-in">
+    <div class="label reveal" data-i="cEyebrow"></div>
+    <h1 class="reveal" data-i="cTitle"></h1>
+    <p class="reveal" data-i="cSub"></p>
+  </div>
+</header>
+
+<section>
+  <div class="wrap contact-grid">
+    <form class="plan reveal" id="planForm" novalidate>
+      <div class="field"><label for="f-name" data-i="fName"></label><input id="f-name" name="name" autocomplete="name" required></div>
+      <div class="field"><label for="f-pax" data-i="fPax"></label><input id="f-pax" name="pax" type="number" min="1" inputmode="numeric" required><small data-i="fPaxHint"></small></div>
+      <div class="field"><label for="f-date" data-i="fDate"></label><input id="f-date" name="date" type="month"></div>
+      <div class="field"><label for="f-days" data-i="fDays"></label><select id="f-days" name="days" data-list="fDaysOpts" data-kind="options"></select></div>
+      <div class="field full"><span class="flabel" data-i="fDest"></span><div class="opts" data-list="fDestOpts" data-kind="checks" data-name="dest"></div></div>
+      <div class="field full"><span class="flabel" data-i="fHotel"></span><div class="opts" data-list="fHotelOpts" data-kind="radios" data-name="hotel"></div></div>
+      <div class="field full"><label for="f-notes" data-i="fNotes"></label><textarea id="f-notes" name="notes" data-ph="fNotesPh"></textarea></div>
+      <div class="full"><p class="err" role="alert"></p><button class="btn fill" type="submit" data-i="fSubmit"></button></div>
+    </form>
+    <aside class="side-card reveal">
+      <h3 data-i="dirTitle"></h3>
+      <ul class="rows" data-list="dirList" data-kind="rows"></ul>
+      <p class="extra" data-i="dirNote"></p>
+      <div class="ctas" style="margin-top:26px"><a href="#" class="btn fill wa" data-i="ctaWa"></a></div>
+    </aside>
+  </div>
+</section>
+
+<section class="stone">
+  <div class="wrap price-grid">
+    <div>
+      <div class="label reveal" data-i="faqEyebrow"></div>
+      <h2 class="serif reveal" data-i="faqTitle" style="margin-top:18px"></h2>
+    </div>
+    <div class="faq reveal" data-list="faq" data-kind="faq"></div>
+  </div>
+</section>
+
+<script src="assets/js/site.js"></script>
+</body>
+</html>

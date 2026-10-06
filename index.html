@@ -1,16 +1,152 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="id">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Japanscape.travel — Escape Pribadi Anda ke Jepang</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/src/style.css" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="assets/logo/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="assets/fonts/cormorant-garamond-latin-300-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/cormorant-garamond-latin-300-italic.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/jost-latin-300-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/jost-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/cormorant-garamond-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/css/site.css">
+<meta property="og:site_name" content="Japanscape">
+<link rel="canonical" href="https://japanscape.id/">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta name="theme-color" content="#1C1614">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://japanscape.id/">
+<meta property="og:title" content="Japanscape — Private Tailor-made Journeys in Japan">
+<meta property="og:description" content="Perjalanan privat ke Jepang yang dirancang khusus untuk wisatawan Indonesia. Tailor-made itinerary, mobil privat, driver & pemandu.">
+<meta property="og:image" content="https://japanscape.id/assets/img/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<title>Japanscape — Private Tailor-made Journeys in Japan</title>
+<meta name="description" content="Perjalanan privat ke Jepang yang dirancang khusus untuk wisatawan Indonesia. Tailor-made itinerary, mobil privat, driver & pemandu.">
 </head>
-<body>
-  <div id="app"></div>
-  <script type="module" src="/src/main.js"></script>
+<body data-page="home">
+
+<header class="hero" id="top">
+  <img width="1350" height="1800" src="assets/img/hero-fuji.webp" srcset="assets/img/hero-fuji-800.webp 800w, assets/img/hero-fuji.webp 1350w" sizes="100vw" alt="Mount Fuji seen across Lake Saiko" fetchpriority="high">
+  <div id="petals"></div>
+  <div class="hero-in">
+    <div class="label reveal" data-i="heroEyebrow"></div>
+    <h1 class="reveal" data-i="heroTitle"></h1>
+    <p class="sub reveal" data-i="heroSub"></p>
+    <div class="ctas reveal">
+      <a href="contact.html" data-nav="contact" class="btn light" data-i="ctaPrimary"></a>
+      <a href="journey.html" data-nav="journey" class="btn ghost" data-i="ctaSecondary"></a>
+    </div>
+  </div>
+  <div class="hero-meta" data-i="heroMeta"></div>
+</header>
+
+<section>
+  <div class="wrap split">
+    <figure class="reveal"><img width="733" height="1100" src="assets/img/yasaka.webp" alt="Yasaka Pagoda at dusk, Kyoto" loading="lazy"></figure>
+    <div>
+      <div class="label reveal" data-i="introEyebrow"></div>
+      <p class="lead reveal" data-i="introLead"></p>
+      <p class="body reveal" data-i="introBody"></p>
+      <div class="sig label reveal" data-i="introSig"></div>
+      <p class="reveal" style="margin-top:30px"><a class="link" href="about.html" data-nav="about" data-i="introLink"></a></p>
+    </div>
+  </div>
+</section>
+
+<section class="stone">
+  <div class="wrap">
+    <div class="head">
+      <div><div class="label reveal" data-i="procEyebrow"></div><h2 class="serif reveal" data-i="procTitle" style="margin-top:18px"></h2></div>
+      <p class="reveal" data-i="procIntro"></p>
+    </div>
+    <div class="steps reveal" data-list="steps" data-kind="steps"></div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="head">
+      <div><div class="label reveal" data-i="tripEyebrow"></div><h2 class="serif reveal" data-i="tripTitle" style="margin-top:18px"></h2></div>
+      <p class="reveal" data-i="tripIntro"></p>
+    </div>
+    <div class="trips">
+      <article class="trip reveal">
+        <figure><img width="825" height="1100" src="assets/img/kinkakuji.webp" alt="Kinkaku-ji, Kyoto" loading="lazy"><span class="tag" data-i="t1tag"></span></figure>
+        <div class="tbody">
+          <div class="meta"><span data-i="t1days"></span><span data-i="t1style"></span></div>
+          <h3 data-i="t1title"></h3><div class="route" data-i="t1route"></div>
+          <ul class="dash" data-list="t1list"></ul>
+          <div class="foot"><span data-i="priceVaries"></span><a class="link" href="journey.html#sample-1" data-nav="journey" data-i="seeDetail"></a></div>
+        </div>
+      </article>
+      <article class="trip reveal">
+        <figure><img width="825" height="1100" src="assets/img/tokyo-tower.webp" alt="Tokyo Tower at night" loading="lazy"><span class="tag" data-i="t2tag"></span></figure>
+        <div class="tbody">
+          <div class="meta"><span data-i="t2days"></span><span data-i="t2style"></span></div>
+          <h3 data-i="t2title"></h3><div class="route" data-i="t2route"></div>
+          <ul class="dash" data-list="t2list"></ul>
+          <div class="foot"><span data-i="priceVaries"></span><a class="link" href="journey.html#sample-2" data-nav="journey" data-i="seeDetail"></a></div>
+        </div>
+      </article>
+    </div>
+    <p class="note reveal" data-i="tripNote"></p>
+  </div>
+</section>
+
+<section class="dark">
+  <div class="wrap">
+    <div class="head">
+      <div><div class="label reveal" data-i="seaEyebrow" style="color:var(--blush)"></div><h2 class="serif reveal" data-i="seaTitle" style="margin-top:18px"></h2></div>
+      <p class="reveal" data-i="seaIntro"></p>
+    </div>
+    <div class="sgrid">
+      <a href="seasons.html#spring" data-nav="seasons" class="season reveal"><figure><img width="733" height="1100" src="assets/img/skytree-sakura-600.webp" srcset="assets/img/skytree-sakura-600.webp 600w, assets/img/skytree-sakura.webp 733w" sizes="(max-width:900px) 50vw, 25vw" alt="" loading="lazy"></figure><span class="label" data-i="s1l"></span><h3 data-i="s1t"></h3><p data-i="s1p"></p></a>
+      <a href="seasons.html#summer" data-nav="seasons" class="season reveal"><figure><img width="1600" height="1067" src="assets/img/garden-600.webp" srcset="assets/img/garden-600.webp 600w, assets/img/garden.webp 1600w" sizes="(max-width:900px) 50vw, 25vw" alt="" loading="lazy"></figure><span class="label" data-i="s2l"></span><h3 data-i="s2t"></h3><p data-i="s2p"></p></a>
+      <a href="seasons.html#autumn" data-nav="seasons" class="season reveal"><figure><img width="825" height="1100" src="assets/img/autumn-park-600.webp" srcset="assets/img/autumn-park-600.webp 600w, assets/img/autumn-park.webp 825w" sizes="(max-width:900px) 50vw, 25vw" alt="" loading="lazy"></figure><span class="label" data-i="s3l"></span><h3 data-i="s3t"></h3><p data-i="s3p"></p></a>
+      <a href="seasons.html#winter" data-nav="seasons" class="season reveal"><figure><img width="1800" height="1200" src="assets/img/snow-station-600.webp" srcset="assets/img/snow-station-600.webp 600w, assets/img/snow-station.webp 1800w" sizes="(max-width:900px) 50vw, 25vw" alt="" loading="lazy"></figure><span class="label" data-i="s4l"></span><h3 data-i="s4t"></h3><p data-i="s4p"></p></a>
+    </div>
+    <p class="reveal" style="margin-top:44px"><a class="link" href="seasons.html" data-nav="seasons" data-i="seaLink"></a></p>
+  </div>
+</section>
+
+<section class="price-band">
+  <div class="wrap">
+    <div class="label reveal" data-i="priceEyebrow"></div>
+    <span class="from reveal" data-i="priceFrom"></span>
+    <div class="amount reveal">IDR 30.000.000 <small>/ pax</small></div>
+    <div class="dur reveal" data-i="term1"></div>
+    <p class="tnc reveal" data-i="tnc"></p>
+    <p class="reveal" style="margin-top:34px"><a class="btn fill" href="contact.html" data-nav="contact" data-i="ctaPrimary"></a></p>
+  </div>
+</section>
+
+<section class="stone founder">
+  <div class="wrap split">
+    <figure class="reveal"><img width="825" height="1100" src="assets/img/zea-meiji.webp" alt="Zefanya Adriel, founder of Japanscape, at Meiji Jingu" loading="lazy"></figure>
+    <div>
+      <div class="label reveal" data-i="ownerEyebrow"></div>
+      <blockquote class="q reveal" data-i="ownerQuote"></blockquote>
+      <div class="sig label reveal" data-i="ownerSig"></div>
+      <div class="facts reveal"><div><b>2022</b><span data-i="f1"></span></div><div><b>2024</b><span data-i="f2"></span></div><div><b>Tokyo</b><span data-i="f3"></span></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <img width="1600" height="1063" src="assets/img/lanterns.webp" srcset="assets/img/lanterns-800.webp 800w, assets/img/lanterns.webp 1600w" sizes="100vw" alt="">
+  <div class="wrap">
+    <div class="label reveal" data-i="ctaEyebrow"></div>
+    <h2 class="serif reveal" data-i="ctaTitle"></h2>
+    <p class="reveal" data-i="ctaSub"></p>
+    <div class="ctas reveal">
+      <a href="#" class="btn light wa" data-i="ctaWa"></a>
+      <a href="contact.html" data-nav="contact" class="btn ghost" data-i="ctaForm"></a>
+    </div>
+  </div>
+</section>
+
+<script src="assets/js/site.js"></script>
 </body>
 </html>
